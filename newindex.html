@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../tp5/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+            <!---bootstrap-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"crossorigin="anonymous"/>
+            <!---bootstrap-->
+    <title>BTCCom</title>
+</head>
+<body>
+    <div class="contenedor">
+    <header class="header"> <meta name="description" content="Opciones de inversion"><meta name="keywords" content="Criptomonedas,inversion,dolar">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BTCCOM</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../newindex.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..tp5/paginas/producto.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tp5/paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..tp5/paginas/sesion.html">inicio de sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="..tp5/paginas/registrate.html">Registrarse</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+    </header>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <div class="tradingview-widget-copyright">
+        <a
+            href="https://es.tradingview.com/markets/"
+            rel="noopener"
+            target="_blank"
+            ><span class="blue-text"></span
+        ></a>
+        </div>
+        <script
+        type="text/javascript"
+        src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+        async
+        >
+            {
+            "symbols": [
+            {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "Bitcoin"
+            },
+            {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "Ethereum"
+            },
+            {
+                "description": "Solana",
+                "proName": "BINANCE:SOLUSDT"
+            },
+            {
+                "description": "Matic",
+                "proName": "BINANCE:MATICUSDT"
+            },
+            {
+                "description": "Cardano",
+                "proName": "BINANCE:ADAPERP"
+            },
+            {
+                "description": "SandBox",
+                "proName": "BINANCE:SANDUSDT"
+            }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "es"
+        }
+        </script>
+    </div>
+        <section class="banner">
+            <div class="item-banner">
+                <h1>Potencia tus inversiones<br> con btccom</h1>
+                <p> empezá ahora</p><br>
+                <button type="button" class="btn btn-secondary" style="background-color: #7D5CFF ;">Registrate</button>
+            </div>
+            <img src="../TP5/imagenes/Financial literacy education flat vector illustration.jpg">
+        </section>
+        <div class="grid-item-padre">
+            <div class="grid-item-hijo">
+                <img src="../TP5/imagenes/exchange.png">
+                <h2>convertí</h2>
+                <section class="flex-section">
+                <p>Converti tus pesos en cualquier otra Criptomoneda al instante con cotizaciones accesibles</p>
+                </section>
+            </div>
+            <div class="grid-item-hijo">
+                <img src="../TP5/imagenes/coin.png">
+                <h2>invertí</h2>
+                <section class="flex-section">
+                <p>Pone a trabajar tus dineros y genera rendimientos de hasta el 8% mensual
+                </p>
+                </section>
+
+            </div>
+            <div class="grid-item-hijo">
+                <img src="../TP5/imagenes/send.png">
+                <h2>deposita y envia</h2>
+                <section class="flex-section">
+                <p>Deposita en BTCCOM desde cualquier cuanta bancaria y paga tus servicio con benficios
+                </p>
+                </section>
+
+            </div>
+        </div>
+
+<div class="barra"></div>
+
+<div class="grid-item-padre2">
+    <div class="grid-item-hijo">
+        <img src="../tp5/imagenes/btc1.jpg">
+        <h2>soluciones cripto</h2>
+        <section class="flex-section">
+        <p>Trabajamos sobre nuestra propia red de blockchain por lo cual ante cualquier conflicto de transcaciones tenes acceso al servicio de comunicacion donde te resolveremos tus consultas.
+        </p>
+        </section>
+    </div>
+    <div class="grid-item-hijo">
+        <img src="../tp5/imagenes/chart.jpg">
+        <h2>Transacciones en segundos</h2>
+        <section class="flex-section">
+        <p>Evite los cuellos de botella a la hora de realizar transacciones,BTCCOM realizar más de 15.000 transcaciones por segundos
+        </p>
+        </section>
+    </div>
+    <div class="grid-item-hijo">
+        <img src="../tp5/imagenes/btc.jpg">
+        <h2>libre de comisiones</h2>
+        <section class="flex-section">
+        <p>Realiza envios libre de Comisiones entre usuarios BTCCOM y usuarios con otras exchange a 0.5$usd
+        </p>
+        </section>
+    </div>
+</div>
+<section class="container-descripcion">
+    <div class="grid-item-hijo2">
+        <img src="../tp5/imagenes/BTC.png">
+        <h2>¿Por que BTCCOM?</h2>
+        <section class="flex-section">
+        <p>Somos la empresa lider en compra y venta de cripto divisas a nivel regional,
+            contamos con el mejor equipo de profesionales y capacitados para brindarte 
+            el mejor acesoramiento a la hora de tomar decisiones de inversion.
+        </p>
+        </section>
+    </div>
+    </section>
+    <article class="article">
+        <h3>preguntas frecuentes</h3>
+        <div class="text-container">
+            <div class="container-0">
+                <div class="texto-1">
+                    <h4>¿Que es un Bitcoin?</h4>
+                    <p>El bitcoin es una moneda digital descentralizada, es decir, que no está controlada por un banco central o administrador único.
+                    Los usuarios pueden enviarse bitcoins a través de una red de intercambio entre pares (P2P) sin necesidad de intermediarios.</p>
+                </div>
+                <div class="texto-1">
+                    <h4>¿Con cuanto puedo empezar a invertir</h4>
+                    <p>BTCCOM permite a los usuarios mejorar tu experiencia práctica a través de una variedad de productos 
+                        financieros y de trading con precios a partir de 1 USD.</p>
+                </div>
+                <div class="texto-1">
+                    <h4>¿Hay algún límite de cambio entre fiat y criptomonedas?</h4>
+                    <p>BTCCOM no impone restricciones de cambio entre fiat y criptomonedas. Acepta más de 50 monedas fiduciarias en tu mercado P2P y 
+                        a través del canal de tarjeta de crédito/débito.</p>
+                </div>
+                <div class="texto-1">
+                    <h4>¿Es BTCCOM un exchange de criptomonedas seguro?</h4>
+                    <p>BTCCOM cuenta con uno de los equipos de tecnología y mantenimiento de seguridad más sofisticados del mundo, que aplica un proceso de 
+                        mejora constante a nuestros sistemas de seguridad para garantizar la protección de los activos y las cuentas de los usuarios.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="container-iniciar">
+        <div class="container-item-iniciar">
+            <img src="../tp5/imagenes/tech.jpg">
+            <h5>¿listo para empezar?</h5>
+            <button type="button" class="btn btn-secondary" style="background-color: #7D5CFF ;">Registrate</button>
+        </div>
+    </section>
+        <div class="footer">
+            todos los derechos reservados
+        </div>
+    </div>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 255, 255);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "nav    nav    nav " "widget widget widget   " "banner    banner    banner" "bar       bar       bar" "section   section   section" ".          caja      .   " "section2  section2  section2" ".          question      ." ".      registro          ." "footer    footer    footer";
+}
+
+.header {
+  grid-area: nav;
+}
+
+.tradingview-widget-container {
+  grid-area: widget;
+}
+
+/*BANNER*/
+.banner {
+  grid-area: banner;
+  text-align: center;
+  display: flex;
+  color: #ff383f;
+}
+
+.item-banner {
+  margin: auto;
+}
+
+.banner img {
+  width: 50%;
+  height: auto;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.banner p {
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+button {
+  color: white;
+  border-radius: 28px;
+  width: 150px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/**/
+/*barra*/
+.barra {
+  grid-area: bar;
+  height: 100px;
+  background-color: black;
+}
+
+/*barra*/
+/*CONTENIDO*/
+.grid-item-padre {
+  display: flex;
+  margin-top: 50px;
+  background-color: rgb(230, 141, 39);
+  grid-area: section;
+  justify-content: space-around;
+}
+
+.grid-item-hijo {
+  border-radius: 15px;
+  max-width: 350px;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+}
+.grid-item-hijo img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+/*caja*/
+/*descripcion de btccom*/
+.container-descripcion {
+  grid-area: caja;
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  max-width: 1500px;
+}
+.container-descripcion .grid-item-hijo2 {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 20px;
+}
+.container-descripcion .grid-item-hijo2 img {
+  border-radius: 15px;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #7D5CFF;
+}
+
+.descripcion h2 {
+  font-size: 35px;
+}
+
+.container-descripcion img {
+  width: 100%;
+  height: auto;
+}
+
+/**/
+/*CONTENIDO 2*/
+.grid-item-padre2 {
+  display: flex;
+  background-color: rgb(161, 161, 161);
+  grid-area: section2;
+  justify-content: space-around;
+}
+
+/**/
+/*REGISTRO*/
+.container-iniciar {
+  grid-area: registro;
+  width: 500px;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 150px;
+  justify-content: center;
+}
+.container-iniciar .btn {
+  margin-top: 15px;
+}
+
+.container-item-iniciar img {
+  width: 100%;
+  height: auto;
+}
+
+/**/
+h3 {
+  text-align: center;
+}
+
+.article {
+  grid-area: question;
+  max-width: 85rem;
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 3.75rem;
+}
+.article .text-container {
+  margin: auto;
+}
+.article .text-container .container-0 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.article .text-container .container-0 .texto-1 {
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  color: white;
+  background-color: black;
+  grid-area: footer;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+/*@MEDIAS QUERIES*/
+@media (max-width: 1440px) {
+  .banner {
+    flex-wrap: wrap;
+  }
+  .grid-item-padre {
+    flex-wrap: wrap;
+  }
+  .grid-item-padre2 {
+    flex-wrap: wrap;
+  }
+  .container-descripcion {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .container-descripcion img {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .banner img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
