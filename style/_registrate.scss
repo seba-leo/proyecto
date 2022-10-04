@@ -1,3 +1,4 @@
+@import"mixin";
 * {
     margin: 0;
     padding: 0;
@@ -6,18 +7,7 @@
   }
   
   .form-register {
-    grid-area: form;
-    border-radius: 5%;
-    max-width: 400px;
-    background: #ffffff;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: "calibri";
-    color: rgb(0, 0, 0);
-    border: 1 px solid black;
-    box-shadow: 7px 13px 37px rgb(218, 218, 218);
+    @include registre;
   }
   
   .form-register {h4 {
@@ -26,16 +16,7 @@
   }  }
   
   .controls {
-    width: 100%;
-    background: #ffffff;
-    padding: 10px;
-    border-radius: 5%;
-    margin-bottom: 16px;
-    border: none;
-    border-bottom: 1px solid #212121;
-    font-family: "calibri";
-    font-size: 18px;
-    color: rgb(0, 0, 0);
+    @include control;
   }
   
   .form-register {p {
@@ -56,13 +37,7 @@
   }}
   
   .botons {
-    width: 100%;
-    background: #ffffff;
-    border: none;
-    padding: 12px;
-    color: rgb(0, 0, 0);
-    margin: 16px 0;
-    font-size: 16px;
+    @include boton;
   }
   
   /*MEDIA QUERIES*/

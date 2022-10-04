@@ -1,3 +1,4 @@
+@import "mixin";
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,13 +6,7 @@
   }
   
   footer {
-    margin-top: 150px;
-    display: flex;
-    color: white;
-    background-color: black;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
+    @include footer;
   }
   
   .section {

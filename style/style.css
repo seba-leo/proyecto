@@ -16,6 +16,7 @@
 }
 
 footer {
+  grid-area: footer;
   display: flex;
   color: white;
   background-color: black;
@@ -31,7 +32,7 @@ footer {
 }
 
 footer {
-  margin-top: 150px;
+  grid-area: footer;
   display: flex;
   color: white;
   background-color: black;
@@ -374,10 +375,10 @@ h3 {
 }
 
 .footer {
+  grid-area: footer;
   display: flex;
   color: white;
   background-color: black;
-  grid-area: footer;
   height: 250px;
   align-items: center;
   justify-content: center;

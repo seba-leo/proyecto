@@ -1,0 +1,47 @@
+@mixin  footer{
+    grid-area: footer;
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+    
+@mixin registre{
+    grid-area: form;
+    border-radius: 5%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: "calibri";
+    color: rgb(0, 0, 0);
+    border: 1 px solid black;
+    box-shadow: 7px 13px 37px rgb(218, 218, 218);
+}
+
+@mixin control{
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5%;
+    margin-bottom: 16px;
+    border: none;
+    border-bottom: 1px solid #212121;
+    font-family: "calibri";
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+@mixin boton{
+    width: 100%;
+    background: #ffffff;
+    border: none;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    margin: 16px 0;
+    font-size: 16px;
+}

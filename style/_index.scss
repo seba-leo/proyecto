@@ -1,4 +1,4 @@
-
+@import "mixin";
 *{
     margin: 0;
     padding: 0;
@@ -184,13 +184,7 @@ h3{
 }
 
 .footer{
-    display: flex;
-    color: white;
-    background-color: black;
-    grid-area: footer;
-    height: 250px;
-    align-items: center;
-    justify-content: center;
+    @include footer;
 }
 /*@MEDIAS QUERIES*/
 @media (max-width:1440px) { 
