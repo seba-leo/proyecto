@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  
+  .card {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  footer {
+    display: flex;
+    color: white;
+    background-color: black;
+    height: 250px;
+    align-items: center;
+    justify-content: center;  }
